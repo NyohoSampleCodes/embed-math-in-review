@@ -1,0 +1,39 @@
+#+title: A sample project to embed math equations in a Re:VIEW document
+
+[[http://reviewml.org/][Re:VIEW]] で数式の埋め込みをするサンプルプロジェクトです。
+
+** TeX 形式の数式
+
+~@<m>{ここにTeXの数式を書く}~ という形式で TeX の数式が埋め込める。
+
+** config
+=config.yml= に
+
+#+begin_src yaml
+  imgmath: true
+
+  imgmath_options:
+    format: png
+    pdfcrop_pixelize_cmd: "pdftocairo -png -r 300 -f %p -l %p -singlefile %i %O"
+#+end_src
+
+と設定しておくと PNG に、
+
+#+begin_src yaml
+  imgmath: true
+
+  imgmath_options:
+    format: svg
+    pdfcrop_pixelize_cmd: "pdftocairo -svg -r 90 -f %p -l %p %i %o"
+#+end_src
+
+としておくと SVG として生成されて埋め込まれる。
+
+** Generate ePub
+
+#+begin_src sh
+bundle exec rake epub
+#+end_src
+
+で ePub を生成する。
+
