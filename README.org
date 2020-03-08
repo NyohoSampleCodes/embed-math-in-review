@@ -2,6 +2,12 @@
 
 [[http://reviewml.org/][Re:VIEW]] で数式の埋め込みをするサンプルプロジェクトです。
 
+** 準備
+macOSの場合の例
+
+- TeX環境を入れる (MacTeXなど)
+- pdftocairoを入れる (=brew install poppler=)
+
 ** TeX 形式の数式
 
 ~@<m>{ここにTeXの数式を書く}~ という形式で TeX の数式が埋め込める。
