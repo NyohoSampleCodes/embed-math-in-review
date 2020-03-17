@@ -13,6 +13,6 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: build EPUB
-      uses: Nyoho/review-pdf-generator-action@master
+      uses: Nyoho/review-epub-generator-action@master
     - name: upload as Artifacts
-      uses: Nyoho/review-pdf-generator-action/upload-artifact@master
+      uses: Nyoho/review-epub-generator-action/upload-artifact@master
