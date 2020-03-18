@@ -16,7 +16,6 @@ jobs:
       uses: takahashim/review-pdf-generator-action@master
     - name: upload as Artifacts
       uses: takahashim/review-pdf-generator-action/upload-artifact@master
-    - uses: actions/checkout@v1
     - name: build EPUB
       uses: Nyoho/review-epub-generator-action@master
     - name: upload as Artifacts
