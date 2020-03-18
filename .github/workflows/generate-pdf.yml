@@ -1,4 +1,4 @@
-name: build Re:VIEW PDF
+name: build Re:VIEW PDF and EPUB
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: [ master ]
 jobs:
   build:
-    name: generate PDF
+    name: generate PDF and EPUB
     runs-on: ubuntu-latest
 
     steps:
@@ -16,3 +16,8 @@ jobs:
       uses: takahashim/review-pdf-generator-action@master
     - name: upload as Artifacts
       uses: takahashim/review-pdf-generator-action/upload-artifact@master
+    - uses: actions/checkout@v1
+    - name: build EPUB
+      uses: Nyoho/review-epub-generator-action@master
+    - name: upload as Artifacts
+      uses: Nyoho/review-epub-generator-action/upload-artifact@master
