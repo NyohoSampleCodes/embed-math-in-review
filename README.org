@@ -1,5 +1,7 @@
 #+title: A sample project to embed math equations in a Re:VIEW document
 
+[[https://github.com/NyohoSampleCodes/embed-math-in-review/workflows/build%20Re:VIEW%20PDF%20and%20EPUB/badge.svg][build Re:VIEW PDF and EPUB]]
+
 [[http://reviewml.org/][Re:VIEW]] で数式の埋め込みをするサンプルプロジェクトです。
 
 ** 準備
