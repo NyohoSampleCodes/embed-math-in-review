@@ -19,4 +19,7 @@ jobs:
     - name: build EPUB
       uses: Nyoho/review-epub-generator-action@master
     - name: upload as Artifacts
-      uses: Nyoho/review-epub-generator-action/upload-artifact@master
+      uses: actions/upload-artifact@v2
+      with:
+        name: epub
+        path: build/output.epub
