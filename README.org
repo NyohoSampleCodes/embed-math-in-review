@@ -37,11 +37,11 @@ macOSの場合の例
 
 としておくと SVG として生成されて埋め込まれる。
 
-** Generate ePub
+** Generate EPUB
 
 #+begin_src sh
 bundle exec rake epub
 #+end_src
 
-で ePub を生成する。
+で EPUB を生成する。
 
